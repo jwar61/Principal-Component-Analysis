@@ -15,20 +15,20 @@ PCA is a multivariate statistical technique used to reduce dimensionality while 
 
 #### Key Mathematical Concepts:
 
-- **Data Standardization:**
+- **Data Standardization**
+ `z_{ij} = \frac{x_{ij} - \bar{x}_j}{\sigma_j}`
+
+- **Correlation Matrix**
+`R_{jk} = \frac{Cov(z_j, z_k)}{\sigma_j \sigma_k}`
 
 
-- **Correlation Matrix:**
+- **Spectral Decomposition**
 
-
-
-- **Spectral Decomposition:**
-
-
-- **Factor Loadings:**
-
-- **Factor Scores:**
-
+`R v_k = \lambda_k v_k`
+- **Factor Loadings**
+`Loadings_{jk} = \sqrt{\lambda_k \cdot v_{jk}}`
+- **Factor Scores**
+`F_{ik} = \sum_{j=1}^{p} z_{ij} v_{jk}`
 
 
 ### PCA Results
@@ -76,26 +76,6 @@ PCA is a multivariate statistical technique used to reduce dimensionality while 
 - NbrTotalMonthlyFishingDays (p=0.988)
 - CapturesTotales (p=0.919)
 
----
-
-## 🔑 Key Takeaways
-
-1. **First 2 PCs explain 80% of variance**
-2. **Total_catch & Value_specie dominate PC1**
-3. **Price drivers:** CPUE (+), fishing days (-), competition (+)
-4. **Low R² (20%)** suggests missing variables
-
----
-
-## 💻 Quick Start
-
-```r
-# Load required packages
-library(FactoMineR)
-library(factoextra)
-
-# PCA
-data_scaled <- scale(your_data)
 pca_result <- PCA(data_scaled, graph = FALSE)
 fviz_eig(pca_result)
 
