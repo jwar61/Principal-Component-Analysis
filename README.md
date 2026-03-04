@@ -16,7 +16,7 @@ PCA is a multivariate statistical technique used to reduce dimensionality while 
 #### Key Mathematical Concepts:
 
 **Data Standardization:**
-```math
+
 z_{ij} = \frac{x_{ij} - \bar{x}_j}{\sigma_j}
 
 #### Correlation Matrix:
