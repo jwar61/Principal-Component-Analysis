@@ -15,24 +15,20 @@ PCA is a multivariate statistical technique used to reduce dimensionality while 
 
 #### Key Mathematical Concepts:
 
-**Data Standardization:**
+- **Data Standardization:**
 
-z_{ij} = \frac{x_{ij} - \bar{x}_j}{\sigma_j}
 
-#### Correlation Matrix:
+- **Correlation Matrix:**
 
-R_{jk} = \frac{Cov(z_j, z_k)}{\sigma_j \sigma_k}
 
-**Spectral Decomposition:**
 
-R v_k = \lambda_k v_k
+- **Spectral Decomposition:**
 
-**Factor Loadings:**
 
-Loadings_{jk} = \sqrt{\lambda_k \cdot v_{jk}}
+- **Factor Loadings:**
 
-**Factor Scores:**
-F_{ik} = \sum_{j=1}^{p} z_{ij} v_{jk}
+- **Factor Scores:**
+
 
 
 ### PCA Results
