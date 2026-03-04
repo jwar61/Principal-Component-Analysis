@@ -19,7 +19,7 @@ PCA is a multivariate statistical technique used to reduce dimensionality while 
 ```math
 z_{ij} = \frac{x_{ij} - \bar{x}_j}{\sigma_j}
 
-**Correlation Matrix:**
+#### Correlation Matrix:
 
 R_{jk} = \frac{Cov(z_j, z_k)}{\sigma_j \sigma_k}
 
